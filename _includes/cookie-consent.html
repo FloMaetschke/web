@@ -32,7 +32,8 @@
     }
 
     if(readCookie('cookie-notice-dismissed')=='true') {
-        {% include scripts.html %}
+        {% include ga.js %}
+        {% include chatbutton.js %}
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
     }
